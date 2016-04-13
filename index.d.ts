@@ -11,6 +11,7 @@ export declare class JsonApiDataStore {
 
 export declare class JsonApiDataStoreModel<T> {
   new (type: string, id: string): JsonApiDataStoreModel<T>;
+  constructor(type: string, id:string);
   serialize(opts?: {}): JsonApiDataStoreModel<T>;
   setAttribute(attrName: string, value: {}): void;
   setRelationship(relName: string, models: JsonApiDataStoreModel<T> | JsonApiDataStoreModel<T>[]): void;
